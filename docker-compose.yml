@@ -1,0 +1,69 @@
+version: '3.8'
+
+x-common-variables: &common-variables
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_USER: admin
+  MYSQL_PASSWORD: admin
+  MYSQL_DATABASE: test_db
+  REACT_APP_SERVER_PORT: 8000
+  MYSQL_HOST: mysql
+  NODE_PORT: 5000
+
+services:
+  # db
+  mysql:
+    container_name: Mysql
+    build: 
+      context: ./db
+    restart: unless-stopped
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      <<: *common-variables
+    ports:
+      - 3307:3306
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d/
+      - mysql_data:/var/lib/mysql
+
+  # adminer
+  adminer:
+    container_name: Adminer
+    depends_on:
+      - mysql
+    image: adminer
+    # restart: never
+    ports:
+      - 8080:8080
+
+  # backend
+  backend:
+    build: 
+      context: ./backend
+    depends_on:
+      - mysql
+    expose:
+      - 8000
+    container_name: Backend
+    environment:
+      <<: *common-variables
+      MYSQL_HOST_IP: mysql
+    volumes:
+      - ./backend:/app
+    links:
+      - mysql
+    ports:
+      - 8000:8000
+
+  # frontend - react
+  front-end-react:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    container_name: Frontend
+    stdin_open: true
+    volumes:
+     - ./frontend:/app
+
+volumes:
+  mysql_data:
