@@ -33,8 +33,9 @@
 ---
 
 - [Features](#features)
-- [Usage](#usage)
 - [Built with](#built-with)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Developing](#developing)
   - [Local development environment](#local-development-environment)
   - [Docker compose](#docker-compose)
@@ -48,20 +49,23 @@
 
 </details>
 
-### **Features**
+## **Features**
 
 **Theming:** 
-- Choose theme: Light (Default) and Dark
+- Choose theme: Light ☀️ (Default) and Dark 🌑
 
-<!-- [![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url] -->
+## **Built with**
 
-Here you can see how the project looks when running:
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [SCSS](https://sass-lang.com)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://reactjs.org/)
+- [Adminer](https://www.adminer.org/)
+- [Mysql](https://www.mysql.com/)
+- [Nodejs](https://www.nodejs.org), [ExpressJS](https://expressjs.com/)
+- [Docker](https://www.docker.com)
 
-![TodoApp](https://github.com/okynas/Todo-App/blob/main/images/Todo-app.png)
-
-## Installation
+## **Installation**
 
 OS X, Linux and Windows:
 
@@ -69,7 +73,7 @@ OS X, Linux and Windows:
 git clone https://github.com/okynas/Todo-App/.git
 ```
 
-## Usage example
+## **Usage**
 
 To use the project, you have to install docker on your machine. 
 
@@ -79,15 +83,6 @@ Once downloaded you can run each of the containers:
 
 ```sh
 docker-compose up -d
-```
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
 ```
 
 ## Release History
