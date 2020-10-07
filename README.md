@@ -21,7 +21,7 @@ git clone https://github.com/okynas/Todo-App/.git
 
 To use the project, you have to install docker on your machine. 
 
-For more information on download, please refer to the [Docker Installation][https://docs.docker.com/get-docker/]. 
+For more information on download, please refer to the ![Docker Installation][https://docs.docker.com/get-docker/]. 
 
 Once downloaded you can run each of the containers:
 
