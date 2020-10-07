@@ -7,7 +7,6 @@ export const NonAuthHeader = ({darkMode, setDarkMode}) => {
     <header>
       <nav>
       <div className="logo">
-          {/* <img src="/images/logo.png" alt="Todoist" /> */}
           <FaHashtag/>
         </div>
         <div className="settings">

@@ -1,18 +1,7 @@
-import React, { useEffect } from 'react';
-import { useTasks } from '../hooks';
-// import {firebase} from "../firebase"
-
+import React from 'react';
 export const Checkbox = ({id}) => {
 
   const archiveTask = () => {
-    // firebase
-    // .firestore()
-    // .collection('tasks')
-    // .doc(id)
-    // .update({
-    //   archived: true
-    // })
-
     fetch('http://localhost:8000/api/v1/tasks/update/' + id, {
       method: 'PUT',
       // method: 'GET',

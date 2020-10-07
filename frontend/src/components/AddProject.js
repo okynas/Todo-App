@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {generatePushId} from '../helpers'
 import {useProjectsValue} from "../context"
 
 export const AddProject = ({shouldShow = false}) => {
@@ -19,7 +18,6 @@ export const AddProject = ({shouldShow = false}) => {
     }
 
     fetch(`http://localhost:8000/api/v1/projects/users/${userId}/create`, {
-      // method: 'GET',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'

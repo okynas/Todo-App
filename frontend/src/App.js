@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {Header} from "./components/layouts/header"
 import {NonAuthHeader} from "./components/layouts/nonAuthHeader"
 import {Content} from "./components/layouts/content"
-// import './App.scss'
 import "./App.css"
 
 import {ProjectsProvider, SelectedProjectProvider, UsersProvider} from "./context"
@@ -11,7 +10,6 @@ import { Login } from './components/Login';
 export function App({darkModeDefault=false}) {
 
   const [darkMode, setDarkMode] = useState(darkModeDefault)
-  
 
   const [auth, setAuth] = useState(localStorage.getItem('auth') || false)
 
