@@ -5,7 +5,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-One to two paragraph statement about your product and what it does.
+Here you can see how the project looks when running:
 
 ![TodoApp](https://github.com/okynas/Todo-App/blob/main/images/Todo-app.png)
 
@@ -41,12 +41,12 @@ npm test
 ## Release History
 
 * 1.0.0
-    * CHANGE: Update docs (module code remains unchanged)
+    * CHANGE: Finishing touches to change repository from private to public
 
 ## Meta
 
 
-OkYNaS – [@YourTwitter](https://twitter.com/dbader_org)
+<!-- OkYNaS – [@YourTwitter](https://twitter.com/dbader_org) -->
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
