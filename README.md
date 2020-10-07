@@ -36,14 +36,10 @@
 - [Built with](#built-with)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Developing](#developing)
-  - [Local development environment](#local-development-environment)
-  - [Docker compose](#docker-compose)
-- [Docker](#docker)
-- [Authors](#authors)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Badges](#badges)
+- [Release](#release)
+<!-- - [Timestamp](#timestamp)
+Why did you undertake the project?
+-->
 
 ---
 
@@ -70,7 +66,7 @@
 OS X, Linux and Windows:
 
 ```sh
-git clone https://github.com/okynas/Todo-App/.git
+git clone https://github.com/okynas/Todo-App.git
 ```
 
 ## **Usage**
@@ -85,7 +81,9 @@ Once downloaded you can run each of the containers:
 docker-compose up -d
 ```
 
-## Release History
+But keep in mind, you should change docker-compose.yml file. This is because some of the username/password combination isn't very strong and secure.  And perhaps you want to change the port each of the containers is running on.
+
+## **Release**
 
 * 1.0.0
     * CHANGE: Finishing touches to change repository from private to public
