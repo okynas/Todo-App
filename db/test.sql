@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
 INSERT INTO `projects` (`project_id`, `project_name`, `user_id`) VALUES 
-(1, "School", 1);
+(1, "Work", 1);
 
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
 INSERT INTO `users` (`user_id`, `username`, `password`) VALUES 
-(1, 'Stian', 'Stian');
+(1, 'admin', 'admin');
 
 CREATE TABLE IF NOT EXISTS `tasks` (
   `task_id` int(11) NOT NULL AUTO_INCREMENT,
