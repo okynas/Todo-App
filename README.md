@@ -7,7 +7,7 @@
 
 One to two paragraph statement about your product and what it does.
 
-![](header.png)
+![TodoApp](https://github.com/okynas/Todo-App/blob/main/images/Todo-app.png)
 
 ## Installation
 
