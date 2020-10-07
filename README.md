@@ -39,7 +39,11 @@
 - [Release](#release)
 <!-- - [Timestamp](#timestamp)
 Why did you undertake the project?
+Lessons learned
+Wish list
 -->
+- [Credits](#credits)
+- [License]("license)
 
 ---
 
@@ -88,27 +92,22 @@ But keep in mind, you should change docker-compose.yml file. This is because som
 * 1.0.0
     * CHANGE: Finishing touches to change repository from private to public
 
-## Meta
-
+## **Credits**
+I found inspiration from [Building Todoist From Scratch - React Tutorial, by Karl Hadwen](https://www.youtube.com/watch?v=HgfA4W_VjmI)
+Some of the difference I have done is that I dont use firebase. This is because I wanted to learn docker as well, and combine multiple services to one project.
 
 <!-- OkYNaS – [@YourTwitter](https://twitter.com/dbader_org) -->
+
+## **License**
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
 [https://github.com/okynas/Todo-App](https://github.com/okynas/Todo-App/blob/master/LICENSE.md)
 
-## Contributing
-
-1. Fork it (<https://github.com/okynas/Todo-App/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
 <!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+<!-- [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics -->
 [wiki]: https://github.com/yourname/yourproject/wiki
